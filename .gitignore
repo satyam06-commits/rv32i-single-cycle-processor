@@ -1,0 +1,8 @@
+work/
+transcript
+*.wlf
+*.log
+*.bak
+*.jou
+*.pb
+*.tmp
