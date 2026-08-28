@@ -34,13 +34,13 @@ always @(*) begin
                       instruction[11:7]};
 
         // Branch Instructions (BEQ)
-        OPCODE_BRANCH:
-            immext = {{19{instruction[31]}},
-                      instruction[31],
-                      instruction[30:25],
-                      instruction[11:8],
-                      1'b0};
-
+            OPCODE_BRANCH:
+    immext = {{19{instruction[31]}},
+              instruction[31],
+              instruction[7],
+              instruction[30:25],
+              instruction[11:8],
+              1'b0};
         // R-Type Instructions don't use an immediate
         OPCODE_RTYPE:
             immext = 32'b0;
