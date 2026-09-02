@@ -31,7 +31,8 @@ The processor follows the classic single-cycle datapath where every instruction 
 
 ### I-Type
 - ADDI
-
+- ORI
+- ANDI
 ### Load/Store
 - LW
 - SW
